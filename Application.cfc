@@ -6,7 +6,7 @@
 *
 */
 
-component extends="framework.CFWorks"
+component extends="CFWorks.magic"
 	output="false" 
 	displayname=""  {
 
