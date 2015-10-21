@@ -11,7 +11,7 @@ component output="true" displayname=""  {
 	include 'routes.cfm';
 	// writeDump(CGI);
 	checkRoutes();
-
+	// abort;
 	/* ****************
 		routing
 	**************** */

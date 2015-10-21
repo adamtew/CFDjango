@@ -9,7 +9,8 @@
 component extends="CFWorks.magic"
 	output="false" 
 	displayname=""  
-    name="app" {
+    name="name" {
+    // name="#hash( getCurrentTemplatePath())#" {
 
 
 
@@ -17,7 +18,7 @@ component extends="CFWorks.magic"
 
     function onRequestStart( targetPath ) { }
 
-    function onRequest( targetPath ) { }
+    function onRequest( targetPath ) {/*fired first I think*/ }
 
     function onRequestEnd() { }
 

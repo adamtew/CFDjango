@@ -1,0 +1,19 @@
+body {
+	/*background-color: blue;*/
+}
+
+div.nav {
+	float:left;
+	display: block;
+}
+
+ul.nav > li {
+	list-style-type: none;
+	float: left;
+	padding: 20px;
+}
+
+div.content {
+	text-align: center;
+	margin: auto auto;
+}

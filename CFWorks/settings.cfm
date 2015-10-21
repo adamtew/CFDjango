@@ -4,11 +4,18 @@
 	PAGE_NAME = getFileFromPath(reReplace(TARGET_NAME, '\..*', ''));
 
 	BASE = '/pages/CFWorks';
+	ROOT = reReplace(getDirectoryFromPath(getCurrentTemplatePath()), '\/CFWorks\/$', '');
+	// WEB_ROOT = 'http://' & CGI.SERVER_NAME & '/pages/CFWorks';
+	WEB_ROOT = 'http://' & CGI.SERVER_NAME & ':' & CGI.SERVER_PORT & '/pages/CFWorks';
+	STATIC_CONTENT = 'http://' & CGI.SERVER_NAME & ':' & CGI.SERVER_PORT & '/pages/CFWorks';
+
 	
+
 	TIMER = '#BASE#/timer';
 	TIMER_ROUTE = '#BASE#/apps/timer';
 	TIMER_VIEWS = '#BASE#/apps/timer/views';
 	TIMER_TEMPS = '#BASE#/apps/timer/templates';
+	TIMER_STATIC = #STATIC_CONTENT# & '/apps/timer/static';
 
 	INSTALLED_APPS = (
 		'#BASE#/apps/timer'
