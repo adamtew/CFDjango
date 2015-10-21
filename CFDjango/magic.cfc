@@ -50,11 +50,11 @@ component output="true" displayname=""  {
 
 		for(APP in INSTALLED_APPS){
 			app_name 						= reReplace(APP, '^[a-z]*\.', '');
-			VARIABLES["#app_name#"]	 		= '#BASE#/#app_name#';
-			VARIABLES['#app_name#_ROUTE'] 	= '#BASE#/apps/#app_name#';
-			VARIABLES['#app_name#_VIEWS'] 	= '#BASE#/apps/#app_name#/views';
-			VARIABLES['#app_name#_TEMPS'] 	= '#BASE#/apps/#app_name#/templates';
-			VARIABLES['#app_name#_STATIC']	= '#STATIC_CONTENT#/apps/#app_name#/static';
+			VARIABLES["#app_name#"]	 		= '#BASE#/#app_name#';						// Used for routes passed by used
+			VARIABLES['#app_name#_ROUTE'] 	= '#BASE#/apps/#app_name#';					// used for file paths
+			VARIABLES['#app_name#_VIEWS'] 	= '#BASE#/apps/#app_name#/views';			// used for locating the view
+			VARIABLES['#app_name#_TEMPS'] 	= '#BASE#/apps/#app_name#/templates';		// path to templates
+			VARIABLES['#app_name#_STATIC']	= '#STATIC_CONTENT#/apps/#app_name#/static';// path to static content
 		}
 		return;
 	}
