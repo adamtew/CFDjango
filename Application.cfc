@@ -26,13 +26,13 @@ component extends="CFWorks.magic"
     	// include targetPath;
     }
 
-    // function onRequest( targetPath ) { 
-    //     abort;
-    // }
+    function onRequest( targetPath ) { 
+        // abort;
+    }
 
-    // function onRequestEnd() { 
-    //     // abort;
-    // }
+    function onRequestEnd() { 
+        // abort;
+    }
 
     function onError( exception, event ) { }
 
