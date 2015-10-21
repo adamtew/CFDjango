@@ -6,7 +6,7 @@
 *
 */
 
-component extends="CFWorks.magic"
+component extends="CFDjango.magic"
 	output="false" 
 	displayname=""  
     name="name" {
@@ -25,7 +25,7 @@ component extends="CFWorks.magic"
     function onError( exception, event ) { }
 
     function onMissingTemplate( targetPage ) { 
-        include "404.cfm";
+        // include "404.cfm";
     }
 
     function onSessionStart() { }

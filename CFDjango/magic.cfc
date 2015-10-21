@@ -35,7 +35,7 @@ component output="true" displayname=""  {
 		// TODO: actually make it show the 404 page...
 		// if you can't match any of the paths throw a 404 error
 		cfheader(statuscode="404", statustext="File Doesn't Exist");
-		cfheader(name='location', value='/pages/CFWorks/404.cfm');
+		cfheader(name='location', value='/pages/CFDjango/404.cfm');
 		abort;
 	}
 
@@ -58,8 +58,5 @@ component output="true" displayname=""  {
 		}
 		return;
 	}
-	
-	
-
 
 }
