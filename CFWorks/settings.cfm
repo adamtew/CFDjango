@@ -5,10 +5,13 @@
 
 	BASE = '/pages/CFWorks';
 	
-	TIME_CLOCK = '#base#/apps/time_clock';
+	TIMER = '#BASE#/timer';
+	TIMER_ROUTE = '#BASE#/apps/timer';
+	TIMER_VIEWS = '#BASE#/apps/timer/views';
+	TIMER_TEMPS = '#BASE#/apps/timer/templates';
 
 	INSTALLED_APPS = (
-		'#base#/apps/time_clock'
+		'#BASE#/apps/timer'
 	);
 
 

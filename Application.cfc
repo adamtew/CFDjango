@@ -13,26 +13,13 @@ component extends="CFWorks.magic"
 
 
 
-    function onApplicationStart() { 
-    }
+    function onApplicationStart() { }
 
-    function onRequestStart( targetPath ) { 
-        // abort;
-        // writeOutput(targetPath);
-    	// if(this.bob)writeOutput("string");
-        // writeDump(targetPath);
-        // location(url="#targetPath#", statuscode="404", addtoken="false");
-        // abort;
-    	// include targetPath;
-    }
+    function onRequestStart( targetPath ) { }
 
-    function onRequest( targetPath ) { 
-        // abort;
-    }
+    function onRequest( targetPath ) { }
 
-    function onRequestEnd() { 
-        // abort;
-    }
+    function onRequestEnd() { }
 
     function onError( exception, event ) { }
 

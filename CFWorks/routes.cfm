@@ -1,14 +1,20 @@
 <cfscript>
-	time_clock = '/pages/CFWorks/apps/time_clock';
-	// addRoute('^#base#/index.cfm$', '#time_clock#/controllers.IndexController', '#base#/index');
+	// addRoute('^#BASE#/index.cfm$', '#TIMER#/controllers.IndexController', '#BASE#/index');
 
 	routes = [
-		[ '^#base#/index.cfm$', '#time_clock#/controllers.IndexController', '#base#/index.cfm' ],
-		[ '^#base#/index.cf$', '#time_clock#/controllers.IndexController', '#base#/index.cfm' ],
-		[ '^#base#/y.cfm$', '#time_clock#/controllers.IndexController', '#base#/index.cfm' ],
-		[ '^#base#/y.cfm$', '#time_clock#/controllers.IndexController', '#base#/index.cfm' ],
-		[ '^#base#/x.cfm$', '#time_clock#/controllers.IndexController', '#base#/index.cfm' ],
-		[ '^#base#/404.cfm$', '#time_clock#/controllers.IndexController', '#base#/404.cfm' ]
+		[ '^#BASE#/index.cfm$', '#TIMER_ROUTE#/controllers.IndexController', '#BASE#/index.cfm' ],
+		
+		// Timer routes
+		// TODO: Figure out how to move this into the timer apps folder
+		[ '^#TIMER#/index.cfm$', '#TIMER_VIEWS#/IndexView.cfm', '#TIMER_TEMPS#/base.cfm' ],
+		[ '^#TIMER#/general.cfm$', '#TIMER_ROUTE#/controllers.IndexController', '#TIMER_VIEWS#/general.cfm' ],
+		[ '^#TIMER#/project.cfm$', '#TIMER_ROUTE#/controllers.IndexController', '#TIMER_VIEWS#/project.cfm' ],
+		
+
+		[ '^#BASE#/y.cfm$', '#TIMER_ROUTE#/controllers.IndexController', '#BASE#/index.cfm' ],
+		[ '^#BASE#/x.cfm$', '#TIMER_ROUTE#/controllers.IndexController', '#BASE#/index.cfm' ],
+		[ '^#BASE#/404.cfm$', '#TIMER_ROUTE#/controllers.IndexController', '#BASE#/404.cfm' ],
+		[ '^#BASE#/404.cfm$', '#TIMER_ROUTE#/controllers.IndexController', '#BASE#/404.cfm' ]
 	];
 
 // urlpatterns = patterns('',
