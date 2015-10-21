@@ -22,7 +22,7 @@ component output="true" displayname=""  {
 	
 		for(key in routes){
 			// if the route is matched
-			if(arrayIsDefined(rematch(key[1], TARGET_NAME), 1)) {
+			if(arrayIsDefined(rematchNoCase(key[1], TARGET_NAME), 1)) {
 			arrayIsDefined(rematch(key[1], TARGET_NAME), 1);
 			// include the View
 			include key[2];
