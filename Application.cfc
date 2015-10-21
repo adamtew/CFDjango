@@ -24,5 +24,9 @@ component extends="CFWorks.magic"
 
     function onError( exception, event ) { }
 
+    function onMissingTemplate( targetPage ) { 
+        include "404.cfm";
+    }
+
     function onSessionStart() { }
 }

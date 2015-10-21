@@ -10,16 +10,16 @@
 	STATIC_CONTENT = 'http://' & CGI.SERVER_NAME & ':' & CGI.SERVER_PORT & '/pages/CFWorks';
 
 	
-
-	TIMER = '#BASE#/timer';
-	TIMER_ROUTE = '#BASE#/apps/timer';
-	TIMER_VIEWS = '#BASE#/apps/timer/views';
-	TIMER_TEMPS = '#BASE#/apps/timer/templates';
+	// timer routes variables 
+	// VARIABLES.TIMER = '#BASE#/timer';
+	// TIMER_ROUTE = '#BASE#/apps/timer';
+	// TIMER_VIEWS = '#BASE#/apps/timer/views';
+	// TIMER_TEMPS = '#BASE#/apps/timer/templates';
 	TIMER_STATIC = #STATIC_CONTENT# & '/apps/timer/static';
 
-	INSTALLED_APPS = (
-		'#BASE#/apps/timer'
-	);
+	INSTALLED_APPS = [
+		'apps.timer'
+	];
 
 
 
